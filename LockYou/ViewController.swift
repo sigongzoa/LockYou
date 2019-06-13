@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  IdleTimer
-//
-//  Created by 한상훈 on 2016. 10. 25..
-//  Copyright © 2016년 Sanghoon Han. All rights reserved.
-//
 
 import UIKit
 
