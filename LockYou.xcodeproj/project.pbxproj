@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D342BEE722B218C300A68B8F /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D342BEE622B218C300A68B8F /* Icon-Small@2x.png */; };
+		D342BEE922B2194000A68B8F /* hahahah.png in Resources */ = {isa = PBXBuildFile; fileRef = D342BEE822B2194000A68B8F /* hahahah.png */; };
 		D37D54C322B11FE60086A7CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54B222B11FE60086A7CE /* ViewController.swift */; };
 		D37D54C422B11FE60086A7CE /* BlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54B322B11FE60086A7CE /* BlackViewController.swift */; };
 		D37D54C522B11FE60086A7CE /* DoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54B422B11FE60086A7CE /* DoingViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D342BEE622B218C300A68B8F /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "clock_image/Assets.xcassets/AppIcon.appiconset/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D342BEE822B2194000A68B8F /* hahahah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hahahah.png; path = resized_clock.png/Assets.xcassets/AppIcon.appiconset/hahahah.png; sourceTree = "<group>"; };
 		D37D549C22B11F8E0086A7CE /* LockYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37D54B222B11FE60086A7CE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D37D54B322B11FE60086A7CE /* BlackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		D37D54B122B11FE60086A7CE /* LockYou */ = {
 			isa = PBXGroup;
 			children = (
+				D342BEE822B2194000A68B8F /* hahahah.png */,
+				D342BEE622B218C300A68B8F /* Icon-Small@2x.png */,
 				D37D54B222B11FE60086A7CE /* ViewController.swift */,
 				D37D54B322B11FE60086A7CE /* BlackViewController.swift */,
 				D37D54B422B11FE60086A7CE /* DoingViewController.swift */,
@@ -161,11 +167,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D342BEE922B2194000A68B8F /* hahahah.png in Resources */,
 				D37D54C722B11FE60086A7CE /* ViewController.png in Resources */,
 				D37D54CC22B11FE60086A7CE /* Main.storyboard in Resources */,
 				D37D54CE22B11FE60086A7CE /* music.mp3 in Resources */,
 				D37D54CB22B11FE60086A7CE /* LaunchScreen.storyboard in Resources */,
 				D37D54C922B11FE60086A7CE /* Assets.xcassets in Resources */,
+				D342BEE722B218C300A68B8F /* Icon-Small@2x.png in Resources */,
 				D37D54C622B11FE60086A7CE /* clear_sound.mp3 in Resources */,
 				D37D54D122B11FE60086A7CE /* Info.plist in Resources */,
 			);
