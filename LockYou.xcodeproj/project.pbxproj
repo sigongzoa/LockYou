@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D342BEE722B218C300A68B8F /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D342BEE622B218C300A68B8F /* Icon-Small@2x.png */; };
-		D342BEE922B2194000A68B8F /* hahahah.png in Resources */ = {isa = PBXBuildFile; fileRef = D342BEE822B2194000A68B8F /* hahahah.png */; };
 		D37D54C322B11FE60086A7CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54B222B11FE60086A7CE /* ViewController.swift */; };
 		D37D54C422B11FE60086A7CE /* BlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54B322B11FE60086A7CE /* BlackViewController.swift */; };
 		D37D54C522B11FE60086A7CE /* DoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54B422B11FE60086A7CE /* DoingViewController.swift */; };
@@ -25,11 +23,50 @@
 		D37D54D022B11FE60086A7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54C122B11FE60086A7CE /* AppDelegate.swift */; };
 		D37D54D122B11FE60086A7CE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D37D54C222B11FE60086A7CE /* Info.plist */; };
 		D37D54D322B1200E0086A7CE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D54D222B1200E0086A7CE /* Data.swift */; };
+		D388830522B6CA04001749E7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D388830222B6C9E3001749E7 /* Charts.framework */; };
+		D388830622B6CA04001749E7 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D388830222B6C9E3001749E7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D388830E22B6CD2E001749E7 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D388830D22B6CD2E001749E7 /* ChartsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D388830122B6C9E3001749E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D38882FC22B6C9E3001749E7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		D388830322B6C9E3001749E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D38882FC22B6C9E3001749E7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		D388830722B6CA04001749E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D38882FC22B6C9E3001749E7 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D38882EE22B6C004001749E7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D388830622B6CA04001749E7 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D342BEE622B218C300A68B8F /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "clock_image/Assets.xcassets/AppIcon.appiconset/Icon-Small@2x.png"; sourceTree = "<group>"; };
-		D342BEE822B2194000A68B8F /* hahahah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hahahah.png; path = resized_clock.png/Assets.xcassets/AppIcon.appiconset/hahahah.png; sourceTree = "<group>"; };
 		D37D549C22B11F8E0086A7CE /* LockYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37D54B222B11FE60086A7CE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D37D54B322B11FE60086A7CE /* BlackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +83,9 @@
 		D37D54C022B11FE60086A7CE /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		D37D54C122B11FE60086A7CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D37D54C222B11FE60086A7CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D37D54D222B1200E0086A7CE /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = SOURCE_ROOT; };
+		D37D54D222B1200E0086A7CE /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = LockYou/Data.swift; sourceTree = SOURCE_ROOT; };
+		D38882FC22B6C9E3001749E7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		D388830D22B6CD2E001749E7 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D388830522B6CA04001749E7 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +103,7 @@
 		D37D549322B11F8E0086A7CE = {
 			isa = PBXGroup;
 			children = (
-				D37D549E22B11F8E0086A7CE /* LockYou */,
+				D37D54B122B11FE60086A7CE /* LockYou */,
 				D37D549D22B11F8E0086A7CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,20 +116,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D37D549E22B11F8E0086A7CE /* LockYou */ = {
-			isa = PBXGroup;
-			children = (
-				D37D54D222B1200E0086A7CE /* Data.swift */,
-				D37D54B122B11FE60086A7CE /* LockYou */,
-			);
-			path = LockYou;
-			sourceTree = "<group>";
-		};
 		D37D54B122B11FE60086A7CE /* LockYou */ = {
 			isa = PBXGroup;
 			children = (
-				D342BEE822B2194000A68B8F /* hahahah.png */,
-				D342BEE622B218C300A68B8F /* Icon-Small@2x.png */,
+				D38882FC22B6C9E3001749E7 /* Charts.xcodeproj */,
+				D37D54D222B1200E0086A7CE /* Data.swift */,
 				D37D54B222B11FE60086A7CE /* ViewController.swift */,
 				D37D54B322B11FE60086A7CE /* BlackViewController.swift */,
 				D37D54B422B11FE60086A7CE /* DoingViewController.swift */,
@@ -105,8 +136,18 @@
 				D37D54C022B11FE60086A7CE /* ItemTableViewController.swift */,
 				D37D54C122B11FE60086A7CE /* AppDelegate.swift */,
 				D37D54C222B11FE60086A7CE /* Info.plist */,
+				D388830D22B6CD2E001749E7 /* ChartsViewController.swift */,
 			);
-			name = LockYou;
+			path = LockYou;
+			sourceTree = "<group>";
+		};
+		D38882FD22B6C9E3001749E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D388830222B6C9E3001749E7 /* Charts.framework */,
+				D388830422B6C9E3001749E7 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,10 +160,12 @@
 				D37D549822B11F8E0086A7CE /* Sources */,
 				D37D549922B11F8E0086A7CE /* Frameworks */,
 				D37D549A22B11F8E0086A7CE /* Resources */,
+				D38882EE22B6C004001749E7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D388830822B6CA04001749E7 /* PBXTargetDependency */,
 			);
 			name = LockYou;
 			productName = LockYou;
@@ -145,7 +188,7 @@
 				};
 			};
 			buildConfigurationList = D37D549722B11F8E0086A7CE /* Build configuration list for PBXProject "LockYou" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -155,6 +198,12 @@
 			mainGroup = D37D549322B11F8E0086A7CE;
 			productRefGroup = D37D549D22B11F8E0086A7CE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D38882FD22B6C9E3001749E7 /* Products */;
+					ProjectRef = D38882FC22B6C9E3001749E7 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D37D549B22B11F8E0086A7CE /* LockYou */,
@@ -162,18 +211,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D388830222B6C9E3001749E7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D388830122B6C9E3001749E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D388830422B6C9E3001749E7 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = D388830322B6C9E3001749E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D37D549A22B11F8E0086A7CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D342BEE922B2194000A68B8F /* hahahah.png in Resources */,
 				D37D54C722B11FE60086A7CE /* ViewController.png in Resources */,
 				D37D54CC22B11FE60086A7CE /* Main.storyboard in Resources */,
 				D37D54CE22B11FE60086A7CE /* music.mp3 in Resources */,
 				D37D54CB22B11FE60086A7CE /* LaunchScreen.storyboard in Resources */,
 				D37D54C922B11FE60086A7CE /* Assets.xcassets in Resources */,
-				D342BEE722B218C300A68B8F /* Icon-Small@2x.png in Resources */,
 				D37D54C622B11FE60086A7CE /* clear_sound.mp3 in Resources */,
 				D37D54D122B11FE60086A7CE /* Info.plist in Resources */,
 			);
@@ -187,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37D54D022B11FE60086A7CE /* AppDelegate.swift in Sources */,
+				D388830E22B6CD2E001749E7 /* ChartsViewController.swift in Sources */,
 				D37D54C522B11FE60086A7CE /* DoingViewController.swift in Sources */,
 				D37D54C422B11FE60086A7CE /* BlackViewController.swift in Sources */,
 				D37D54C822B11FE60086A7CE /* MyProtoTableViewCell.swift in Sources */,
@@ -199,6 +264,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D388830822B6CA04001749E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = D388830722B6CA04001749E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D37D54BA22B11FE60086A7CE /* LaunchScreen.storyboard */ = {
@@ -339,6 +412,7 @@
 		D37D54AF22B11F8F0086A7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y3Z2Z567H;
@@ -357,6 +431,7 @@
 		D37D54B022B11F8F0086A7CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y3Z2Z567H;
