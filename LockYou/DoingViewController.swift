@@ -32,6 +32,9 @@ class DoingViewController: UIViewController {
             dataCenter.history[dataCenter.count].success = true
             dataCenter.results["success"]! += 1
             dataCenter.coin += Int(dataCenter.history[dataCenter.count].time)
+            dataCenter.history[dataCenter.count].study_time = Int((timerData.totalmin - timerData.minutes)/60)
+            
+            print("실제공부시간",dataCenter.history[dataCenter.count].study_time)
             
             if let temp = soundEffect {
                 temp.pause()
@@ -61,6 +64,9 @@ class DoingViewController: UIViewController {
                 timerData.timerIsOn = false
                 dataCenter.history[dataCenter.count].success = false
                 dataCenter.results["fail"]! += 1
+                dataCenter.history[dataCenter.count].study_time = Int((timerData.totalmin - timerData.minutes)/60)
+                
+                print("실제공부시간",dataCenter.history[dataCenter.count].study_time)
                 
                 let alertController = UIAlertController(title: "타이머 실패", message: "앱에서 나가시면 타이머가 취소됩니다", preferredStyle: UIAlertController.Style.alert) //Replace UIAlertControllerStyle.Alert by UIAlertControllerStyle.alert
                 
@@ -90,6 +96,8 @@ class DoingViewController: UIViewController {
         timerData.timerIsOn = false
         dataCenter.history[dataCenter.count].success = false
         dataCenter.results["fail"]! += 1
+        dataCenter.history[dataCenter.count].study_time = Int((timerData.totalmin - timerData.minutes)/60)
+        print("실제공부시간",dataCenter.history[dataCenter.count].study_time)
         self.dismiss(animated: true, completion: nil)
         if let temp = soundEffect {
             temp.pause()

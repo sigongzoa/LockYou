@@ -43,8 +43,8 @@ class dataClass{
 
 
 class historyClass{
-    var time : Int          // 목표시간
-    var study_time : Int    // 실제 공부 시간
+    var time : Int          // 목표시간, 단위-분
+    var study_time : Int    // 실제 공부 시간, 단위-분
     var title : String
     var success : Bool
     var date = Date()
@@ -59,6 +59,7 @@ class historyClass{
         date = Date()
         attain = "Non"
         weekday = Calendar.current.component(.weekday, from: self.date)
+        print(weekday)
     }
 //    required init?(coder aDecoder: NSCoder) {
 //        self.seconds = aDecoder.decodeObject(forKey: "seconds") as! Int

@@ -26,55 +26,77 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-Sn-ox7">
-                                            <rect key="frame" x="27" y="11" width="32.5" height="24"/>
+                                            <rect key="frame" x="27" y="11" width="33" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="attain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZA-YP-l4S">
-                                            <rect key="frame" x="31" y="58" width="43" height="20.5"/>
+                                            <rect key="frame" x="31" y="58" width="43" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-gO-tbJ">
-                                            <rect key="frame" x="101" y="58" width="52.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-gO-tbJ">
+                                            <rect key="frame" x="101" y="57.5" width="34" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="study_time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpw-8Z-vIb">
+                                            <rect key="frame" x="101" y="86" width="82" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="eWL-j9-5E8"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsE-ee-Bhq">
-                                            <rect key="frame" x="91.5" y="17.5" width="27" height="16"/>
+                                            <rect key="frame" x="92" y="17.5" width="27" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="success" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-V1-aGs">
-                                            <rect key="frame" x="288" y="58" width="62.5" height="20.5"/>
+                                            <rect key="frame" x="287.5" y="58" width="63" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weekday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72h-KV-oED">
+                                            <rect key="frame" x="124" y="17.5" width="53" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="topMargin" secondItem="hvs-Sn-ox7" secondAttribute="top" id="3RJ-ut-fzs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zpw-8Z-vIb" secondAttribute="bottom" constant="19" id="BYl-FZ-iT1"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fIT-V1-aGs" secondAttribute="centerX" constant="40" id="I9i-RI-sKY"/>
                                         <constraint firstItem="qZA-YP-l4S" firstAttribute="leading" secondItem="CAX-oc-PRx" secondAttribute="leadingMargin" constant="15" id="NMK-Kj-WCW"/>
                                         <constraint firstItem="fIT-V1-aGs" firstAttribute="centerY" secondItem="CAX-oc-PRx" secondAttribute="centerY" id="ObV-Lz-uMp"/>
                                         <constraint firstItem="qZA-YP-l4S" firstAttribute="centerY" secondItem="CAX-oc-PRx" secondAttribute="centerY" id="V8z-6v-ALe"/>
+                                        <constraint firstItem="72h-KV-oED" firstAttribute="centerY" secondItem="RsE-ee-Bhq" secondAttribute="centerY" id="YjO-wQ-BtY"/>
                                         <constraint firstItem="Wxb-gO-tbJ" firstAttribute="centerY" secondItem="CAX-oc-PRx" secondAttribute="centerY" id="bSH-lK-8BF"/>
                                         <constraint firstItem="hvs-Sn-ox7" firstAttribute="leading" secondItem="CAX-oc-PRx" secondAttribute="leadingMargin" constant="11" id="dTo-aA-CXy"/>
                                         <constraint firstItem="RsE-ee-Bhq" firstAttribute="leading" secondItem="hvs-Sn-ox7" secondAttribute="trailing" constant="32" id="dg5-0J-xnn"/>
                                         <constraint firstItem="Wxb-gO-tbJ" firstAttribute="leading" secondItem="qZA-YP-l4S" secondAttribute="trailing" constant="27" id="ikO-ZQ-KPX"/>
+                                        <constraint firstItem="Zpw-8Z-vIb" firstAttribute="top" secondItem="Wxb-gO-tbJ" secondAttribute="bottom" constant="7" id="n8e-Ow-d5A"/>
+                                        <constraint firstItem="72h-KV-oED" firstAttribute="leading" secondItem="RsE-ee-Bhq" secondAttribute="trailing" constant="5" id="nTn-oq-x5R"/>
+                                        <constraint firstItem="Zpw-8Z-vIb" firstAttribute="leading" secondItem="Wxb-gO-tbJ" secondAttribute="leading" id="vQz-q6-BAS"/>
                                         <constraint firstItem="RsE-ee-Bhq" firstAttribute="baseline" secondItem="hvs-Sn-ox7" secondAttribute="baseline" id="w3L-pp-Rps"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="attain" destination="qZA-YP-l4S" id="XYQ-7Y-tGb"/>
                                     <outlet property="date" destination="RsE-ee-Bhq" id="quI-6u-yG9"/>
-                                    <outlet property="minute" destination="Wxb-gO-tbJ" id="ZBh-Sz-ul4"/>
+                                    <outlet property="study_time" destination="Zpw-8Z-vIb" id="AcE-4P-v7w"/>
                                     <outlet property="success" destination="fIT-V1-aGs" id="0eo-cR-taz"/>
+                                    <outlet property="time" destination="Wxb-gO-tbJ" id="oSX-Dz-jvd"/>
                                     <outlet property="title" destination="hvs-Sn-ox7" id="C3I-Y6-ku2"/>
+                                    <outlet property="weekday" destination="72h-KV-oED" id="zgk-nc-Niy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

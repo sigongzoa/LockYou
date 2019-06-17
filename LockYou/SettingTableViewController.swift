@@ -53,7 +53,26 @@ class SettingTableViewController: UITableViewController {
         cell.title.text = branch.title
         cell.date.text = dateFormatter.string(from: branch.date)
         cell.attain.text = String(branch.attain) + " %"
-        cell.minute.text = String(branch.time) + " minutes"
+        cell.time.text = "목표시간 " + String(branch.time) + " minutes"
+        cell.study_time.text = "공부시간 " + String(branch.study_time) + " minutes"
+        switch branch.weekday {
+        case 1:
+            cell.weekday.text = String("일요일")
+        case 2:
+            cell.weekday.text = String("월요일")
+        case 3:
+            cell.weekday.text = String("화요일")
+        case 4:
+            cell.weekday.text = String("수요일")
+        case 5:
+            cell.weekday.text = String("목요일")
+        case 6:
+            cell.weekday.text = String("금요일")
+        case 7:
+            cell.weekday.text = String("토요일")
+        default:
+            cell.weekday.text = String("weekday error")
+        }
         
         if branch.success {
             cell.success.text = "Success"}
