@@ -2,8 +2,6 @@
 import UIKit
 
 class ItemTableViewController: UITableViewController {
-    
-    @IBOutlet weak var coins: UIBarButtonItem!
 
     @IBAction func cancel(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
@@ -18,7 +16,6 @@ class ItemTableViewController: UITableViewController {
                 }
                 dataCenter.item[0] = false
                 dataCenter.coin -= 1
-                coins.title = String(dataCenter.coin)+" coin"
                 
                 item1Get.isSelected = true
                 item2Get.isSelected = false
@@ -42,7 +39,6 @@ class ItemTableViewController: UITableViewController {
                 }
                 dataCenter.item[1] = false
                 dataCenter.coin -= 5
-                coins.title = String(dataCenter.coin)+" coin"
                 
                 item2Get.isSelected = true
                 item1Get.isSelected = false
@@ -63,7 +59,6 @@ class ItemTableViewController: UITableViewController {
                 }
                 dataCenter.item[2] = false
                 dataCenter.coin -= 1
-                coins.title = String(dataCenter.coin)+" coin"
                 
                 item3Get.isSelected = true
                 item1Get.isSelected = false
@@ -86,7 +81,6 @@ class ItemTableViewController: UITableViewController {
                 }
                 dataCenter.item[3] = false
                 dataCenter.coin -= 1
-                coins.title = String(dataCenter.coin)+" coin"
                 
                 item4Get.isSelected = true
                 item1Get.isSelected = false
@@ -107,7 +101,6 @@ class ItemTableViewController: UITableViewController {
                 }
                 dataCenter.item[4] = false
                 dataCenter.coin -= 3
-                coins.title = String(dataCenter.coin)+" coin"
                 
                 item5Get.isSelected = true
                 item1Get.isSelected = false
@@ -129,7 +122,6 @@ class ItemTableViewController: UITableViewController {
                     dataCenter.item[i] = true
                 }
                 dataCenter.item[5] = false
-                coins.title = String(dataCenter.coin)+" coin"
                 
                 item6Get.isSelected = true
                 item1Get.isSelected = false
