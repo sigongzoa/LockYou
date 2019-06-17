@@ -6,7 +6,6 @@ class SettingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("###")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,7 +31,6 @@ class SettingTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("here!!")
 
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,16 +51,15 @@ class SettingTableViewController: UITableViewController {
         let branch = dataCenter.history[count - 1 - indexPath.row]
         
         cell.title.text = branch.title
-        cell.date.text = dateFormatter.string(from: branch.date as Date)
+        cell.date.text = dateFormatter.string(from: branch.date)
         cell.attain.text = String(branch.attain) + " %"
-        cell.minute.text = String(branch.seconds) + " minutes"
+        cell.minute.text = String(branch.time) + " minutes"
         
         if branch.success {
             cell.success.text = "Success"}
         else {
             cell.success.text = "Fail"
         }
-        print("!!!!!!")
         return cell
     }
     

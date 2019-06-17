@@ -42,7 +42,6 @@ class StartViewController: UIViewController {
         if (!dataCenter.item[5]){
             item1.image = #imageLiteral(resourceName: "worm2")
         }
-        print("***")
     }
     
 
@@ -63,7 +62,7 @@ class StartViewController: UIViewController {
         } else { thisHistory.title = "No Title"}
         
         
-        thisHistory.seconds = Int(timeInput.countDownDuration/60)//
+        thisHistory.time = Int(timeInput.countDownDuration/60)//
         //thisHistory.category = dataCenter.category[self.categorySegment.selectedSegmentIndex]
         
         

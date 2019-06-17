@@ -43,15 +43,17 @@ class dataClass{
 
 
 class historyClass{
-    var seconds : Int
+    var time : Int          // 목표시간
+    var study_time : Int    // 실제 공부 시간
     var title : String
     var success : Bool
     var date = Date()
     var attain : String
-    var weekday : Int
+    var weekday : Int       // weekday : 일요일부터 1~7
     
     init(){
-        seconds = 0
+        time = 0
+        study_time = 0
         title = "Sample"
         success = false
         date = Date()

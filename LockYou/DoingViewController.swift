@@ -31,7 +31,7 @@ class DoingViewController: UIViewController {
             timerData.timerIsOn = false
             dataCenter.history[dataCenter.count].success = true
             dataCenter.results["success"]! += 1
-            dataCenter.coin += Int(dataCenter.history[dataCenter.count].seconds)
+            dataCenter.coin += Int(dataCenter.history[dataCenter.count].time)
             
             if let temp = soundEffect {
                 temp.pause()
@@ -172,9 +172,9 @@ class DoingViewController: UIViewController {
         
         doingTitle.text = dataCenter.history[dataCenter.count].title
         //doingCategory.text = dataCenter.history[dataCenter.count].category
-        doingCoin.text = "\(Int(dataCenter.history[dataCenter.count].seconds))" + " coins"
+        doingCoin.text = "\(Int(dataCenter.history[dataCenter.count].time))" + " coins"
         
-        timerLabel.text = "\(dataCenter.history[dataCenter.count].seconds)" + " min 0 sec"
+        timerLabel.text = "\(dataCenter.history[dataCenter.count].time)" + " min 0 sec"
     }
  
 
