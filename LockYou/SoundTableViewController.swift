@@ -6,27 +6,98 @@ class SoundTableViewController: UITableViewController {
     
     @IBOutlet weak var Sound1Get: UIButton!
     @IBAction func Sound1Get(_ sender: UIButton) {
-        print("A")
+        Sound1Get.isSelected=true
+        Sound2Get.isSelected=false
+        Sound3Get.isSelected=false
+        Sound4Get.isSelected=false
+        Sound5Get.isSelected=false
+        Sound6Get.isSelected=false
+        dataCenter.musicselect[0] = true
+        dataCenter.musicselect[1]  = false
+        dataCenter.musicselect[2]  = false
+        dataCenter.musicselect[3]  = false
+        dataCenter.musicselect[4]  = false
+        dataCenter.musicselect[5] = false
     }
     
     @IBOutlet weak var Sound2Get: UIButton!
-    @IBAction func Sound2Get(_ sender: UIButton) {
+    @IBAction func Sound2Get(_ sender: UIButton){
+        Sound1Get.isSelected=false
+        Sound2Get.isSelected=true
+        Sound3Get.isSelected=false
+        Sound4Get.isSelected=false
+        Sound5Get.isSelected=false
+        Sound6Get.isSelected=false
+        dataCenter.musicselect[0] = false
+        dataCenter.musicselect[1]  = true
+        dataCenter.musicselect[2]  = false
+        dataCenter.musicselect[3]  = false
+        dataCenter.musicselect[4]  = false
+        dataCenter.musicselect[5] = false
     }
     
     @IBOutlet weak var Sound3Get: UIButton!
     @IBAction func Sound3Get(_ sender: UIButton) {
+        Sound1Get.isSelected=false
+        Sound2Get.isSelected=false
+        Sound3Get.isSelected=true
+        Sound4Get.isSelected=false
+        Sound5Get.isSelected=false
+        Sound6Get.isSelected=false
+        dataCenter.musicselect[0] = false
+        dataCenter.musicselect[1]  = false
+        dataCenter.musicselect[2]  = true
+        dataCenter.musicselect[3]  = false
+        dataCenter.musicselect[4]  = false
+        dataCenter.musicselect[5] = false
     }
     
     @IBOutlet weak var Sound4Get: UIButton!
     @IBAction func Sound4Get(_ sender: UIButton) {
+        Sound1Get.isSelected=false
+        Sound2Get.isSelected=false
+        Sound3Get.isSelected=false
+        Sound4Get.isSelected=true
+        Sound5Get.isSelected=false
+        Sound6Get.isSelected=false
+        dataCenter.musicselect[0] = false
+        dataCenter.musicselect[1]  = false
+        dataCenter.musicselect[2]  = false
+        dataCenter.musicselect[3]  = true
+        dataCenter.musicselect[4]  = false
+        dataCenter.musicselect[5] = false
     }
     
     @IBOutlet weak var Sound5Get: UIButton!
     @IBAction func Sound5Get(_ sender: UIButton) {
+        Sound1Get.isSelected=false
+        Sound2Get.isSelected=false
+        Sound3Get.isSelected=false
+        Sound4Get.isSelected=false
+        Sound5Get.isSelected=true
+        Sound6Get.isSelected=false
+        dataCenter.musicselect[0] = false
+        dataCenter.musicselect[1]  = false
+        dataCenter.musicselect[2]  = false
+        dataCenter.musicselect[3]  = false
+        dataCenter.musicselect[4]  = true
+        dataCenter.musicselect[5] = false
     }
     
     @IBOutlet weak var Sound6Get: UIButton!
     @IBAction func Sound6Get(_ sender: UIButton) {
+        Sound1Get.isSelected=false
+        Sound2Get.isSelected=false
+        Sound3Get.isSelected=false
+        Sound4Get.isSelected=false
+        Sound5Get.isSelected=false
+        Sound6Get.isSelected=true
+        dataCenter.musicselect[0] = false
+        dataCenter.musicselect[1]  = false
+        dataCenter.musicselect[2]  = false
+        dataCenter.musicselect[3]  = false
+        dataCenter.musicselect[4]  = false
+        dataCenter.musicselect[5] = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -447,6 +447,15 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time0" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-g9-ff0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJG-dz-PEK">
+                                        <rect key="frame" x="16" y="26" width="30" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="🔈"/>
+                                        <connections>
+                                            <action selector="vol:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Xv-oK-UqM"/>
+                                            <action selector="vol:" destination="itF-11-EUV" eventType="touchUpInside" id="ch3-Et-iRd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -536,6 +545,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="itF-11-EUV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1847.2" y="713.79310344827593"/>
         </scene>
@@ -557,6 +567,16 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRX-68-Ia0">
                                         <rect key="frame" x="8" y="8" width="359" height="359"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00x-pO-oL2">
+                                        <rect key="frame" x="19" y="28" width="30" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="🔈"/>
+                                        <connections>
+                                            <action selector="vol:" destination="BYZ-38-t0r" eventType="touchUpInside" id="922-mn-yuE"/>
+                                            <action selector="vol:" destination="itF-11-EUV" eventType="touchUpInside" id="Dj2-37-boP"/>
+                                            <action selector="vol:" destination="DsF-ir-IvU" eventType="touchUpInside" id="qbm-wy-bia"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -643,6 +663,7 @@
                         <outlet property="doingCoin" destination="SJB-gA-arR" id="Wao-mI-NDw"/>
                         <outlet property="doingTitle" destination="5nn-YY-5W3" id="iHv-IM-hhR"/>
                         <outlet property="timerLabel" destination="Tdj-FB-BeQ" id="Qg8-up-ZPG"/>
+                        <outlet property="vol" destination="00x-pO-oL2" id="MUJ-ZH-8O3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuZ-Sy-7an" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -957,6 +978,14 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Sound" image="coin image" landscapeImage="coin image" selectedImage="coin image" id="HTo-Ym-Op9"/>
+                    <connections>
+                        <outlet property="Sound1Get" destination="MKq-Ge-KW4" id="j09-22-2Vt"/>
+                        <outlet property="Sound2Get" destination="Z1K-a0-TuI" id="JUZ-3U-W24"/>
+                        <outlet property="Sound3Get" destination="Foa-UH-8tC" id="KSi-Ge-Oc4"/>
+                        <outlet property="Sound4Get" destination="FdB-Eq-szL" id="kdC-d8-Kkm"/>
+                        <outlet property="Sound5Get" destination="S0L-fo-jsw" id="7d7-BF-FN5"/>
+                        <outlet property="Sound6Get" destination="hwH-Fb-BQA" id="ELX-ur-vQa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qb-e5-sY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

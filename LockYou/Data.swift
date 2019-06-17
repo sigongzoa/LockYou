@@ -19,6 +19,9 @@ class dataClass{
     var coin:Int = 30
     //var category = ["Default", "Health", "Study", "Me", "Friend"]
     var item:[Bool] = [false, true, true, true, true, true]
+    var musicselect:[Bool] = [true,false,false,false,false,false]
+    var music:[String] = ["music1","music2","music3","music4","music5","music6"]
+    var sound:Bool = true
     
     init() {
         dateFormatter.dateFormat = "yyyy년 M월 d일"

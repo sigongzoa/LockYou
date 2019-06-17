@@ -6,6 +6,17 @@ import UIKit
 class StartViewController: UIViewController {
 
     
+    @IBAction func vol(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.setTitle("🔇", for: .normal)
+            sender.isSelected = false
+            dataCenter.sound = false
+        } else {
+            sender.setTitle("🔈", for: .normal)
+            sender.isSelected = true
+            dataCenter.sound = true
+        }
+    }
     
     
     @IBOutlet weak var timerTitle: UITextField!

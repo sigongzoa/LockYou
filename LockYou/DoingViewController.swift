@@ -15,6 +15,49 @@ var soundEffect: AVAudioPlayer?
 class DoingViewController: UIViewController {
 
     
+    @IBOutlet weak var vol: UIButton!
+    @IBAction func vol(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.setTitle("🔇", for: .normal)
+            sender.isSelected = false
+            dataCenter.sound = false
+            if let temp = soundEffect {
+                temp.pause()
+            }
+            
+        } else {
+            var selec : Int = 0
+            for i in 0 ... 5
+            {
+                if(dataCenter.musicselect[i]==true)
+                {
+                    selec=i
+                }
+            }
+            
+            if let url = Bundle.main.url(forResource: dataCenter.music[selec], withExtension: "wav"){
+                
+                do {
+                    soundEffect = try AVAudioPlayer(contentsOf: url)
+                    
+                    guard let sound = soundEffect else { return }
+                    
+                    sound.prepareToPlay()
+                    
+                    sound.play()
+                    
+                } catch {
+                    print("cannot play player")
+                }
+            } else {
+                print("cannot find file")
+            }
+            sender.setTitle("🔈", for: .normal)
+            sender.isSelected = true
+            dataCenter.sound = true
+        }
+    }
+    
     @objc func updateTimer() {
         
         if(timerData.black == 5){
@@ -115,27 +158,40 @@ class DoingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        if let url = Bundle.main.url(forResource: "music", withExtension: "mp3"){
-            
-            do {
-                soundEffect = try AVAudioPlayer(contentsOf: url)
-                
-                guard let sound = soundEffect else { return }
-                
-                sound.prepareToPlay()
-                
-                sound.play()
-                
-            } catch {
-                print("cannot play player")
+        if(dataCenter.sound)
+        {
+            var selec : Int = 0
+            for i in 0 ... 5
+            {
+                if(dataCenter.musicselect[i]==true)
+                {
+                    selec=i
+                }
             }
+        
+            if let url = Bundle.main.url(forResource: dataCenter.music[selec], withExtension: "wav"){
+            
+                do {
+                    soundEffect = try AVAudioPlayer(contentsOf: url)
+                
+                    guard let sound = soundEffect else { return }
+                
+                    sound.prepareToPlay()
+                
+                    sound.play()
+                
+                } catch {
+                    print("cannot play player")
+                }
+            } else {
+                print("cannot find file")
+            }
+
         } else {
-            print("cannot find file")
+            
+            vol.setTitle("🔇", for: .normal)
+            
         }
-
-
         // Do any additional setup after loading the view.
     }
     
